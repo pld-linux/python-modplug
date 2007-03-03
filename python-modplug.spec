@@ -38,7 +38,7 @@ resamplujący.
 
 %prep
 %setup -q -n %{module}-%{version}
-find -type f | xargs sed -i -e 's|#!.*python.*|#!%{_bindir}/python|g' "{}" ";"
+find -type f | xargs sed -i -e 's|#!.*python.*|#!%{_bindir}/python|g'
 
 %install
 rm -rf $RPM_BUILD_ROOT
