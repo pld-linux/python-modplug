@@ -10,7 +10,7 @@ Source0:	http://www.sacredchao.net/~piman/software/%{module}-%{version}.tar.gz
 # Source0-md5:  a937f97d63fe1dadbe7ca69ae37d77ae
 URL:		http://www.sacredchao.net/~piman/
 BuildRequires:	libmodplug-devel >= 0.7
-BuildRequires:	pkgconfig >= 0.21-2
+BuildRequires:	pkgconfig >= 1:0.21-2
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq  python-modules
@@ -28,7 +28,7 @@ filter are enabled.
 
 %description -l pl.UTF-8
 Ten moduł języka Python pozwala na ładowanie i dekodowanie plików
-wspieranych przez bibliotekę ModPlug (czyli MOD, IT, XM itd.). Jego
+obsługiwanych przez bibliotekę ModPlug (czyli MOD, IT, XM itd.). Jego
 API zostało stworzone tak, aby jak najbardziej było zbliżone do
 pyvorbis i pymad.
 
