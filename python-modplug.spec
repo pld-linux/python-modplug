@@ -44,7 +44,7 @@ find -type f | xargs sed -i -e 's|#!.*python.*|#!%{_bindir}/python|g'
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-python ./setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
+%py_install
 install playmod.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
