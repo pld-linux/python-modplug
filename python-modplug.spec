@@ -9,6 +9,7 @@ Group:		Development/Languages/Python
 Source0:	http://www.sacredchao.net/~piman/software/%{module}-%{version}.tar.gz
 # Source0-md5:  a937f97d63fe1dadbe7ca69ae37d77ae
 URL:		http://www.sacredchao.net/~piman/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	libmodplug-devel >= 0.7
 BuildRequires:	pkgconfig >= 1:0.21-2
 BuildRequires:	python-devel
